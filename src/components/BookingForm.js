@@ -25,7 +25,8 @@ function BookingForm() {
     setStatus("Submitting...");
 
     try {
-      const response = await axios.post("http://localhost:8080/api/bookings", formData);
+     const response = await axios.post("https://jspackers-backend-production-4166.up.railway.app/api/bookings", formData);
+
       console.log(response.data);
       setStatus("Booking submitted successfully!");
       setFormData({
